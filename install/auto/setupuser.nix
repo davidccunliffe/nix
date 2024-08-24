@@ -4,7 +4,7 @@
       name = "setupuser";
       runtimeInputs = [ pkgs.ssh-import-id pkgs.openssh ];
       text = ''
-        ssh-import-id gh:ilude
+        ssh-import-id gh:davidccunliffe
         touch ~/.zshrc
       '';
     });
@@ -12,7 +12,7 @@
     description = "Import SSH key from GitHub";
     wantedBy = [ "multi-user.target" ];
     serviceConfig = {
-      User = "anvil";
+      User = "dcunliffe";
       Type = "oneshot";
       ExecStart = "${script}";
     };

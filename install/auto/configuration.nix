@@ -30,7 +30,7 @@
 		hashedPassword = "*";
 	};
 
-	users.users.anvil = {
+	users.users.dcunliffe = {
 		isNormalUser = true;
 		extraGroups = [ "wheel" "docker" "systemd-journal" ];
 		shell = pkgs.zsh;
@@ -89,7 +89,7 @@
 		nano
 		netcat
 		nettools
-		nmap
+		neovim
 		openssl
 		pciutils
 		python3

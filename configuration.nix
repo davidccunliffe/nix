@@ -15,7 +15,7 @@
   #time.timeZone = "America/Los_Angeles";
 
   # Define a user account.
-  users.users.anvil = {
+  users.users.dcunliffe = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" "systemd-journal" ];
     shell = pkgs.zsh;
@@ -73,10 +73,9 @@
     less
     libuuid
     linuxHeaders
+    neovim
     mkpasswd
-    netcat
     nettools
-    nmap
     openssl
     python3
     python3Packages.pip
@@ -102,5 +101,5 @@
   services.qemuGuest.enable = true;
   virtualisation.docker.enable = true;
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }
