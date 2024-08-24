@@ -53,6 +53,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    ansible
+    awscli2
     bash
     cloud-init
     coreutils
@@ -66,6 +68,8 @@
     git
     gnumake
     gnutar
+    go
+    google-cloud-sdk
     htop
     iproute2
     jq
@@ -80,12 +84,14 @@
     python3
     python3Packages.pip
     ripgrep
+    rustup
     rsync
     spice-vdagent
     ssh-import-id
     strace
     sysstat
     tealdeer
+    tenv
     tree
     tzdata
     unzip
